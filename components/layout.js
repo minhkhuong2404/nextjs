@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/NavBar";
-import Nav from "react-bootstrap/Nav";
+import NavbarMenu from "./NavbarMenu";
 
 const Layout = ({ children }) => (
   <Container>
@@ -13,13 +12,7 @@ const Layout = ({ children }) => (
     </Head>
 
     <header>
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand>My Next App</Navbar.Brand>
-        <Nav>
-          <Nav.Link href="/">Posts</Nav.Link>
-          <Nav.Link href="/">About</Nav.Link>
-        </Nav>
-      </Navbar>
+      <NavbarMenu />
     </header>
     <main>{children}</main>
   </Container>
